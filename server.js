@@ -1,17 +1,12 @@
-﻿var http = require('http');
-var port = process.env.port || 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+﻿var express = require('express');
+var app = express();
 
-//var express = require('express')
-//var app = express()
+app.set('port', (process.env.port || 5000));
 
-//app.get('/', function (req, res) {
-//    res.send('Hello World!')
-//})
+app.get('/', function (req, res) {
+    res.send('Hello World!');
+});
 
-//app.listen(3000, function () {
-//    console.log('Example app listening on port 3000!')
-//})
+app.listen(app.get('port'), function () {
+    console.log('Example app listening on port ' + app.get('port') + '!');
+});
