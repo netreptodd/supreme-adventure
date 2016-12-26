@@ -1,0 +1,5 @@
+﻿#npm
+node_modules/
+
+#visual_studio
+*.suo
