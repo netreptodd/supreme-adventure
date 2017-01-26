@@ -15,8 +15,15 @@ app.post('/', function (req, res) {
         "type": "PlainText",
         "text": "Hello, World!"
       },
+      "reprompt": {
+        "outputSpeech": {
+          "type": "PlainText",
+          "text": ""
+        }
+      }
       "shouldEndSession": true
     }
+    "sessionAttributes": {}
   });
 });
 
