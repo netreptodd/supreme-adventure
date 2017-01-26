@@ -20,9 +20,9 @@ app.post('/', function (req, res) {
           "type": "PlainText",
           "text": ""
         }
-      }
+      },
       "shouldEndSession": true
-    }
+    },
     "sessionAttributes": {}
   });
 });
