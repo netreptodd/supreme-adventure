@@ -4,7 +4,16 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+  res.json({
+    "version": "1.0",
+    "response": {
+      "shouldEndSession": true,
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "Todd sucks."
+      }
+    }
+  });
 });
 
 app.listen(app.get('port'), function () {
