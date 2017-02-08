@@ -9,21 +9,21 @@ app.get('/', function(req, res){
 
 app.post('/', function (req, res) {
   res.json({
-    "version": "1.0",
-    "response": {
-      "outputSpeech": {
-        "type": "PlainText",
-        "text": "Hello, World!"
+    'version': '1.0',
+    'response': {
+      'outputSpeech': {
+        'type': 'PlainText',
+        'text': 'Hello, World!'
       },
-      "reprompt": {
-        "outputSpeech": {
-          "type": "PlainText",
-          "text": ""
+      'reprompt': {
+        'outputSpeech': {
+          'type': 'PlainText',
+          'text': ''
         }
       },
-      "shouldEndSession": true
+      'shouldEndSession': true
     },
-    "sessionAttributes": {}
+    'sessionAttributes': {}
   });
 });
 
