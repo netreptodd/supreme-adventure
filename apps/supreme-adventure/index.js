@@ -11,3 +11,5 @@ app.intent('number',
     response.say('You asked for the number ' + number);
   }
 );
+
+module.exports = app;
