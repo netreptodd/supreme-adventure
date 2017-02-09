@@ -2,7 +2,7 @@ module.change_code = 1;
 var alexa = require('alexa-app');
 var app = new alexa.app('supreme-adventure');
 
-app.intent('number',
+app.intent('numberIntent',
   {
     'slots': { 'number': 'NUMBER' },
     'utterances': ['say the number {1-100|number}']
