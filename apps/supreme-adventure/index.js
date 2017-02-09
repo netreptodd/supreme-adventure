@@ -1,5 +1,6 @@
+module.change_code = 1;
 var alexa = require('alexa-app');
-var app = new alexa.app('sample');
+var app = new alexa.app('supreme-adventure');
 
 app.intent('number',
   {
