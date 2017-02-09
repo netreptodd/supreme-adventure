@@ -1,21 +1,17 @@
 {
   "name": "supreme-adventure",
-  "version": "0.0.0",
-  "description": "supreme-adventure",
+  "version": "1.0.0",
+  "description": "a 'supreme adventure'",
   "main": "server.js",
-  "author": {
-    "name": "toddn"
-  },
   "dependencies": {
-    "alexa-verifier": "^0.2.0",
-    "express": "^4.14.0"
+    "alexa-app-server": "^3.0.0"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^3.15.0",
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^3.0.1",
-    "gulp-mocha": "^3.0.1",
-    "mocha": "^3.2.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netreptodd/supreme-adventure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/netreptodd/supreme-adventure/issues"
+  },
+  "homepage": "https://github.com/netreptodd/supreme-adventure#readme"
 }

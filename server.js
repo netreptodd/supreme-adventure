@@ -1,34 +1,8 @@
-﻿var express = require('express');
-var app = express();
+var AlexaAppServer = require('alexa-app-server');
 
-app.set('port', (process.env.PORT || 5000));
-
-app.get('/', function(req, res){
-  res.send('No GETs here...');
-});
-
-app.post('/', function (req, res) {
-  res.json({
-    'version': '1.0',
-    'response': {
-      'outputSpeech': {
-        'type': 'PlainText',
-        'text': 'Hello, World!'
-      },
-      'reprompt': {
-        'outputSpeech': {
-          'type': 'PlainText',
-          'text': ''
-        }
-      },
-      'shouldEndSession': true
-    },
-    'sessionAttributes': {}
-  });
-});
-
-
-
-app.listen(app.get('port'), function () {
-  console.log('Example app listening on port ' + app.get('port') + '!');
-});
+var instance = AlexaAppServer.start({
+  server_root: __dirname,
+  app_dir: "apps",
+  app_root: "/alexa/",
+  port: process.env.port || 8080
+});:

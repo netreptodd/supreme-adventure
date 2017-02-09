@@ -1,0 +1,20 @@
+{
+  "name": "supreme-adventure",
+  "version": "0.0.0",
+  "description": "supreme-adventure",
+  "main": "server.js",
+  "author": {
+    "name": "Todd&slow"
+  },
+  "dependencies": {
+    "alexa-app": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.2.0"
+  }
+}
