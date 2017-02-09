@@ -2,7 +2,7 @@
   "name": "supreme-adventure",
   "version": "0.0.0",
   "description": "supreme-adventure",
-  "main": "server.js",
+  "main": "index.js",
   "author": {
     "name": "Todd&slow"
   },
