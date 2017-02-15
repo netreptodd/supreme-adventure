@@ -15,7 +15,4 @@ app.intent('Help', {
   response.say('Here is a brief list of action words you can use to interact with the game. Attack, get, look, go, open, ask, bamboozle');
 });
 
-app.sessionEnded((request, response) => {
-});
-
 module.exports = app;
