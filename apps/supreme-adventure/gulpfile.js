@@ -18,4 +18,8 @@ gulp.task('lint', () => {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['lint', 'test']);
+gulp.task('watch', () => {
+  gulp.watch(options.jsPaths, ['lint', 'test']);
+});
+
+gulp.task('default', ['lint', 'test', 'watch']);
